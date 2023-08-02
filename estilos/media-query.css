@@ -29,52 +29,55 @@ W3C ATUALIZADO 2023.
 
 /*impressão*/
 @media print {
-    *{
-        font-family: 'Courier New', Courier, monospace;
-    }
+  * {
+    font-family: "Courier New", Courier, monospace;
+  }
 
-    body{
-        background-image: url(../imagens/back-print.jpg);
-        
-    }
+  body {
+    background-image: url(../imagens/back-print.jpg);
+  }
 
-    main{
-        border: 2px solid black;
-    }
-    
-    main h1{
-        text-shadow: none;
-        color: black;
-    }
+  main {
+    width: 100vw;
+    border: 2px solid black;
+  }
 
-    img#phone{
-        display: none;
-    }
-    
-    img#tablet{
-        display: none;
-    }
-    
-    img#print{
-        display: block;
-    }
-    
-    img#pc{
-        display: none;
-    }
-    
-    img#tv{
-        display: none;
-    }
+  main::after {
+    content: "Essa impressão foi feita através do site www.cursoemvideo.com";
+  }
 
+  main h1 {
+    text-shadow: none;
+    color: black;
+  }
+
+  img#phone {
+    display: none;
+  }
+
+  img#tablet {
+    display: none;
+  }
+
+  img#print {
+    display: block;
+  }
+
+  img#pc {
+    display: none;
+  }
+
+  img#tv {
+    display: none;
+  }
 }
 /*tablete*/
 @media screen and (min-width: 768px) and (max-width: 992px) {
   body {
     background-image: url(../imagens/back-tablet.jpg);
   }
-  
-  main{
+
+  main {
     width: 600px;
   }
 
@@ -104,57 +107,57 @@ W3C ATUALIZADO 2023.
     background-image: url(../imagens/back-pc.jpg);
   }
 
-  main{
+  main {
     width: 700px;
   }
 
-  img#phone{
+  img#phone {
     display: none;
-}
+  }
 
-img#tablet{
+  img#tablet {
     display: none;
-}
+  }
 
-img#print{
+  img#print {
     display: none;
-}
+  }
 
-img#pc{
+  img#pc {
     display: block;
-}
+  }
 
-img#tv{
+  img#tv {
     display: none;
-}
+  }
 }
 /*Grandes telas*/
 @media screen and (min-width: 1200px) {
-    body{
-        background-image: url(../imagens/back-tv.jpg);
-    }
+  body {
+    background-image: url(../imagens/back-tv.jpg);
+  }
 
-    main{
-        width: 800px;
-    }
+  main {
+    width: 800px;
+  }
 
-    img#phone{
-        display: none;
-    }
-    
-    img#tablet{
-        display: none;
-    }
-    
-    img#print{
-        display: none;
-    }
-    
-    img#pc{
-        display: none;
-    }
-    
-    img#tv{
-        display: block;
-    }
+  img#phone {
+    display: none;
+  }
+
+  img#tablet {
+    display: none;
+  }
+
+  img#print {
+    display: none;
+  }
+
+  img#pc {
+    display: none;
+  }
+
+  img#tv {
+    display: block;
+  }
 }
