@@ -27,24 +27,84 @@ W3C ATUALIZADO 2023.
  Extra large devices (large laptops and desktops, 1200px and up) 
 @media only screen and (min-width: 1200px) {...} */
 
+/*impressão*/
+@media print {
+}
+/*tablete*/
+@media screen and (min-width: 768px) and (max-width: 992px) {
+  body {
+    background-image: url(../imagens/back-tablet.jpg);
+  }
 
+  img#phone {
+    display: none;
+  }
 
+  img#tablet {
+    display: block;
+  }
 
+  img#print {
+    display: none;
+  }
 
-@media print{
+  img#pc {
+    display: none;
+  }
 
+  img#tv {
+    display: none;
+  }
+}
+/*desktop*/
+@media screen and (min-width: 992px) and (max-width: 1200px) {
+  body {
+    background-image: url(../imagens/back-pc.jpg);
+  }
+
+  img#phone{
+    display: none;
 }
 
-@media screen and (min-width:768px) and (max-width:992px){
-
+img#tablet{
+    display: none;
 }
 
-@media screen and (min-width:992px) and (max-width:1200px){
-
+img#print{
+    display: none;
 }
 
-@media screen and (min-width:1200px){
+img#pc{
+    display: block;
+}
+
+img#tv{
+    display: none;
+}
+}
+/*Grandes telas*/
+@media screen and (min-width: 1200px) {
+    body{
+        background-image: url(../imagens/back-tv.jpg);
+    }
+
+    img#phone{
+        display: none;
+    }
     
+    img#tablet{
+        display: none;
+    }
+    
+    img#print{
+        display: none;
+    }
+    
+    img#pc{
+        display: none;
+    }
+    
+    img#tv{
+        display: block;
+    }
 }
-
-
