@@ -29,11 +29,53 @@ W3C ATUALIZADO 2023.
 
 /*impressão*/
 @media print {
+    *{
+        font-family: 'Courier New', Courier, monospace;
+    }
+
+    body{
+        background-image: url(../imagens/back-print.jpg);
+        
+    }
+
+    main{
+        border: 2px solid black;
+    }
+    
+    main h1{
+        text-shadow: none;
+        color: black;
+    }
+
+    img#phone{
+        display: none;
+    }
+    
+    img#tablet{
+        display: none;
+    }
+    
+    img#print{
+        display: block;
+    }
+    
+    img#pc{
+        display: none;
+    }
+    
+    img#tv{
+        display: none;
+    }
+
 }
 /*tablete*/
 @media screen and (min-width: 768px) and (max-width: 992px) {
   body {
     background-image: url(../imagens/back-tablet.jpg);
+  }
+  
+  main{
+    width: 600px;
   }
 
   img#phone {
@@ -62,6 +104,10 @@ W3C ATUALIZADO 2023.
     background-image: url(../imagens/back-pc.jpg);
   }
 
+  main{
+    width: 700px;
+  }
+
   img#phone{
     display: none;
 }
@@ -86,6 +132,10 @@ img#tv{
 @media screen and (min-width: 1200px) {
     body{
         background-image: url(../imagens/back-tv.jpg);
+    }
+
+    main{
+        width: 800px;
     }
 
     img#phone{
